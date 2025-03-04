@@ -1,9 +1,8 @@
 #include <iostream>
 
 // question 1
-int readNumber()
+int readNumber(int x)
 {
-	int x{ };
 	std::cout << "Please enter a number: ";
 	std::cin >> x;
 	return x;
@@ -16,8 +15,9 @@ void writeAnswer(int x)
 
 int main()
 {
-	int x{ readNumber() };
-	x = x + readNumber();
+	int x{};
+	readNumber(x);
+	x = x + readNumber(x);
 	writeAnswer(x);
 
 	return 0;
