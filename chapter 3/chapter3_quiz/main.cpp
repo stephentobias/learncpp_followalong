@@ -1,31 +1,29 @@
-// Chapter 3, quiz question 3
-// What does the call stack look like in the following program when the point of 
-//  execution is on line 4 (8 in this copied version)? Only the function names 
-//  are needed for this exercise, not the line numbers indicating the point of return.
+// Chapter 3, quiz question 4 (extra credit)
+// Extra credit : The following program is supposed to add two numbers, but 
+//  doesn’t work correctly. Use the integrated debugger to step through this 
+//  program.For inputs, enter 8 and 4. Based on the information you learn, 
+//  fix the following program
 #include <iostream>
 
-void d()
-{ // here
+int readNumber()
+{
+    std::cout << "Please enter a number: ";
+    int x{};
+    std::cin >> x;
+
+    return x;
 }
 
-void c()
+void writeAnswer(int x)
 {
-}
-
-void b()
-{
-	c();
-	d();
-}
-
-void a()
-{
-	b();
+    std::cout << "The sum is: " << x << '\n';
 }
 
 int main()
 {
-	a();
+    int x{ readNumber() };
+    int y{ readNumber() };
+    writeAnswer(x + y);
 
-	return 0;
+    return 0;
 }
