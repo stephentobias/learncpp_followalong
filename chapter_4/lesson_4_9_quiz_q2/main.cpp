@@ -1,8 +1,6 @@
 #include <iostream>
 
-void isPrime(int x);
-void printPrime();
-void printNotPrime();
+bool isPrime(int x);
 
 int main()
 {
@@ -11,30 +9,26 @@ int main()
     int user_input{ };
     std::cin >> user_input;
 
-    isPrime(user_input);
+    if ( isPrime(user_input) )
+        std::cout << "This digit is prime\n";
+    else
+        std::cout << "This digit is not prime\n";
 
     return 0;
 }
 
 
-void isPrime(int x)
+bool isPrime(int x)
 {
     if (x == 2)
-        printPrime();
+        return true;
+    else if (x == 3)
+        return true;
     else if (x == 5)
-        printPrime();
+        return true;
     else if (x == 7)
-        printPrime();
-    else
-        printNotPrime();
+        return true;
+
+    return false;
 }
 
-void printPrime()
-{
-    std::cout << "This digit is prime";
-}
-
-void printNotPrime()
-{
-    std::cout << "This digit is not prime";
-}
