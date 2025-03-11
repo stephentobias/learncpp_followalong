@@ -25,7 +25,7 @@ int main()
 
 // This function returns the current height of the ball as it falls by first: 
 // 1) calculating distance fallen = gravity_constant * x_seconds^2 / 2
-// 2) then subtractive the distance fallen from the tower height given by the user.
+// 2) then subtracting the distance fallen from the tower height given by the user.
 double calcCurrentHeight(double fall_seconds, double tower_height)
 {
 	double gravity_constant { 9.8 };
