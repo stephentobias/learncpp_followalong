@@ -18,6 +18,7 @@
 > Note: Remember to use double literals for doubles, e.g. `2.0` rather than `2`.
 
 ## Notes
-This is the first project that will attempt to use makefiles. I'm still unfamiliar with the make build process so there may be some hiccups. 
+This is the first project that will attempt to use makefiles. I'm still unfamiliar with the make build process so there may be some hiccups. The makefiles for debug and release versions are included both as templates in the parent folder and as active versions in their respective folders. 
 
 I'm also using a new IDE (which I will update on the main page soon) Geany. I moved my dev environment to a Raspberry Pi just to experiment a little. So far so good.
+
