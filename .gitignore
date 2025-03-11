@@ -3,7 +3,8 @@
 # This file adds CodeBlock and Visual Studio related files
 
 ### Geany ###
-final
+final-release
+final-debug
 *.o
 
 ### CodeBlocks ###
