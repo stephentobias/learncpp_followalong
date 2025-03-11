@@ -2,6 +2,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=codeblocks,visualstudiocode
 # This file adds CodeBlock and Visual Studio related files
 
+### Geany ###
+final
+*.o
 
 ### CodeBlocks ###
 # specific to CodeBlocks IDE
