@@ -11,7 +11,7 @@ int main()
 	int user_age{ };
 	std::cin >> user_age;
 	
-	std::cout << "Your age + length of name is: " << user_age + std::ssize(user_fname) << '\n';
+	std::cout << "Your age + length of name is: " << user_age + static_cast<int>(user_fname.length()) << '\n';
 	
 	return 0;
 }
