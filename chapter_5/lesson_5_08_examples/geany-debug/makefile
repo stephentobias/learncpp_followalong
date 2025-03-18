@@ -1,25 +1,26 @@
 GEN_FLAGS = -fexceptions -pedantic-errors -std=c++20 -Wall -Wconversion -Weffc++ -Werror -Wextra -Wsign-conversion
 DBG_FLAGS = -ggdb
-
+TARGET_BUILD = debug
 COMPILER_CPP = g++
+
+FILENAME = string_view_literals
 
 all: final
 
-final: main.o 
+final: $(FILENAME).o 
 	@echo "Linking and producing final debug executable..."
-	$(COMPILER_CPP) -o $@-debug $^ -pg
+	$(COMPILER_CPP) -o $@-$(TARGET_BUILD) $^ -pg
 	
-main.o: main.cpp
-	@echo "Compiling main file..."
+$(FILENAME).o: $(FILENAME).cpp
+	@echo "Compiling object file(s)..."
 	$(COMPILER_CPP) $(GEN_FLAGS) $(DBG_FLAGS) -c $^ -o $@
-	@echo "Removing copy of main.cpp...."
-	rm ./main.cpp
+	@echo "Removing copy of source file(s)...."
+	rm ./$(FILENAME).cpp
 
-main.cpp:
-	@echo "Copying main.cpp from ../src..."
-	cp ../src/main.cpp ./
+$(FILENAME).cpp:
+	@echo "Copying source files from ../src..."
+	cp ../src/$(FILENAME).cpp ./
 	
 clean:
 	@echo "Removing build files..."
-	rm main.o final-debug gmon.out
-
+	rm $(FILENAME).o final-$(TARGET_BUILD) gmon.out
