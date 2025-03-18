@@ -44,3 +44,7 @@ Another thing is that Geany doesn't have a built-in debugger that I can see. I n
 
 ### Summary:
 I may end up using both for each project since it helps me practice setting up projects in each IDE. I will later link a how-to guide for myself that walks through the steps in setting up the projects for each one. Disclaimer: The how-to guide will be from what I was able to figure out on my own. I am not an experienced developer and don't yet understand the process enough to know if the process is missing important steps. Unfortunately, I was unable to find any guides online that adequately explained how to setup existing projects in each of the IDEs if they don't include the respective project files. More info will be provided when I make that guide. 
+
+
+## Pace of work
+Currently I'm attempting 2 Learncpp chapters a week but will not commit to it fully. I may need to vary the pace to account for my personal schedule as well as the difficulty of the lessons. Hopefully I can at least hit the average. 
