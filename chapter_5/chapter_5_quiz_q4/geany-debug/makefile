@@ -1,9 +1,9 @@
 GEN_FLAGS = -fexceptions -pedantic-errors -std=c++20 -Wall -Wconversion -Weffc++ -Werror -Wextra -Wsign-conversion
 DBG_FLAGS = -ggdb
-TARGET_BUILD = {replace_with_target}
+TARGET_BUILD = debug
 COMPILER_CPP = g++
 
-FILENAME = {replace_with_source_filename}
+FILENAME = question_4_solution
 
 all: final
 
