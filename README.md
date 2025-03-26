@@ -14,11 +14,12 @@ I think I've figured out how to centralize everything so I don't end up with mul
 
 I may attempt to migrate the other repos into this one at some point but I need to figure out if I need to change the remote origin and how to do that without deleting the commit logs. As of 3/3/2025, they have not been migrated. 
 
-Note: This is not a repository of notes, it simply houses my code for working through examples and lesson exercises/quiz questions. I will provide explanation where possible but this is not quaranteed.
+**Note:** *This is not a repository of notes.* It simply houses my code for working through examples and lesson exercises/quiz questions. I will provide explanation where possible but this is not quaranteed.
 
 ## My IDE
 I may jump between Visual Studio Community and Code::Blocks while submitting code for these lessons. I haven't decided which I like best overall. 
-As of 3/10/2025, I have a combined dual dev environment setup. One is the original environment on my laptop (Windows) and the new dev env is on a Raspberry Pi (Raspbian). I just wanted to tinker about. On the Pi, I didn't want to install anything too heavy so I'm trying out the pre-installed IDE, Geany. See my notes about it below.
+
+As of 3/10/2025, I have a migrated to a combined dual dev environment setup. By which I mean, I have 2 different environments I am using to code. One is the original environment on my laptop (Windows), which uses either Visual Studio 2022 or Code::blocks as an IDE. The new dev env is on a Raspberry Pi (Raspbian, which uses Geany as an IDE. I just wanted to tinker about. On the Pi, I didn't want to install anything too heavy so I'm trying out the pre-installed IDE, Geany. See my notes about it below.
 
 ### Visual Studio Community
 #### Pros: 
